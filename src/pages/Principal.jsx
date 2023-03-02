@@ -1,10 +1,9 @@
 import React from 'react'
 import '../style/pages/principal.css'
 
-const URL_API = process.env.REACT_APP_API_URL_1;
-
 const Principal = () => {
 
+    
 
 
   return (

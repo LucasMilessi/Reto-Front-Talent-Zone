@@ -40,11 +40,11 @@ export const AddProduct = () => {
     }
 
   return (
-    <div className='divForm'>
+    <div className='divFormAdd'>
         <h1>AGREGAR PRODUCTO</h1>
         <form onSubmit={(e) => addProduct(e)}>
 
-                <div className='divLabel'>
+                <div className='divLabelAdd'>
                     <label>
                         Nombre: <img alt='' src={arrow} />
                         <input type='text' placeholder='Ingrese Nombre del Producto' onChange={(e) => setName(e.target.value)} />
@@ -56,7 +56,7 @@ export const AddProduct = () => {
                     <label>
                         Habilitado: <img alt='' src={arrow} />
                         <select onChange={(e) => choice(e.target.value)}>
-                            <option>Seleccione Apice</option>
+                            <option>Seleccione una Opción</option>
                             <option key={1}  value={true} >Habilitado</option>
                             <option key={2}  value={false} >Desabilitado</option>
                         </select>

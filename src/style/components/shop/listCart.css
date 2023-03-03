@@ -1,4 +1,4 @@
-.contenedorModal-lis{
+.contenedorModal-cart{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -10,7 +10,7 @@
     width: 1000px !important;
 }
 
-.overlay-lis{
+.overlay-cart{
     width: 100%;
     height: 100%;
     position: fixed;
@@ -22,7 +22,7 @@
     justify-content: center;
 }
 
-.encabezado-lis{
+.encabezado-cart{
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -32,12 +32,12 @@
     border-bottom: 1px solid #e8e8e8;
 }
 
-.encabezado-lis > h4{
+.encabezado-cart > h4{
     font-weight: 500;
     font-size:20px;
 }
 
-.botonCerrar-lis{
+.botonCerrar-cart{
     justify-content: center;
     
     top:20px;
@@ -54,7 +54,7 @@
     font-size: 20px;
 }
 
-.botonCerrar-lis:hover{
+.botonCerrar-cart:hover{
     background: rgba(0,0,0, .2)
 }
 
@@ -87,15 +87,15 @@
     margin-right: 10px;
 }
 
-.contenedorModal-lis::-webkit-scrollbar {
+.contenedorModal-cart::-webkit-scrollbar {
     width: 5px;
   }
    
-.contenedorModal-lis::-webkit-scrollbar-track {
+.contenedorModal-cart::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
    
-.contenedorModal-lis::-webkit-scrollbar-thumb {
+.contenedorModal-cart::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     outline: 1px solid slategrey;
     border-radius: 100px;

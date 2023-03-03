@@ -30,6 +30,36 @@ html, body{
     width: 100vw;
 }
 
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+}
+
+button {
+    background-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    color: #318aac !important;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-left-color: #318aac;
+    border-right-color: #318aac;
+    transition: all 1s ease;
+}
+
+
+button:hover {
+    background: #318aac;
+    color: #fff !important;
+}
 
 
 

@@ -13,11 +13,12 @@ export const AddProduct = () => {
     const [max, setMax] = useState()
 
     const addProduct = (e) => {
+        
         e.preventDefault();
 
         let request = {
             "name": name,
-            "quantity": quantity,
+            "inInventory": quantity,
             "enable": enable,
             "min": min,
             "max": max
@@ -34,6 +35,10 @@ export const AddProduct = () => {
         .catch(err => console.error(err))
     }
 
+    const choice = (val) => {
+        setEnable(val)
+    }
+
   return (
     <div className='divForm'>
         <h1>AGREGAR PRODUCTO</h1>
@@ -46,19 +51,23 @@ export const AddProduct = () => {
                     </label>
                     <label>
                         Cantidad: <img alt='' src={arrow} />
-                        <input type='text' placeholder='Ingrese la cantidad' onChange={(e) => setQuantity(e.target.value)} />
+                        <input type='number' placeholder='Ingrese la cantidad' onChange={(e) => setQuantity(e.target.value)} />
                     </label>
                     <label>
                         Habilitado: <img alt='' src={arrow} />
-                        <input type='text' placeholder='Ingrese la cantidad' onChange={(e) => setEnable(e.target.value)} />
+                        <select onChange={(e) => choice(e.target.value)}>
+                            <option>Seleccione Apice</option>
+                            <option key={1}  value={true} >Habilitado</option>
+                            <option key={2}  value={false} >Desabilitado</option>
+                        </select>
                     </label>
                     <label>
                         Cantidad minima a comprar: <img alt='' src={arrow} />
-                        <input type='text' placeholder='Ingrese la cantidad minima' onChange={(e) => setMin(e.target.value)} />
+                        <input type='number' placeholder='Ingrese la cantidad minima' onChange={(e) => setMin(e.target.value)} />
                     </label>
                     <label>
                         Cantidad maxima a comprar: <img alt='' src={arrow} />
-                        <input type='text' placeholder='Ingrese la cantidad maxima' onChange={(e) => setMax(e.target.value)} />
+                        <input type='number' placeholder='Ingrese la cantidad maxima' onChange={(e) => setMax(e.target.value)} />
                     </label>
 
                     <button id='addProduct' type="submit" className='btn btn-success' >Agregar Producto</button>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { AddProduct } from '../components/product/AddProduct';
 import '../style/pages/principal.css'
 
 const Principal = () => {
@@ -14,7 +15,7 @@ const Principal = () => {
             </nav>
         </header>
         <main id='main'>
-
+          <AddProduct />
         </main>
         <footer id='footer'>
 
